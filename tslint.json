@@ -1,0 +1,33 @@
+{
+	"defaultSeverity": "error",
+	"extends": ["tslint-react"],
+	"jsRules": {},
+	"rules": {
+		"member-access": false,
+		"ordered-imports": true,
+		"quotemark": true,
+		"object-literal-sort-keys": true,
+		"no-console": false,
+		"semicolon": true,
+		"jsx-no-lambda": true,
+		"max-line-length": {
+			"options": [100]
+		}
+	},
+	"compilerOptions": {
+		"module": "commonjs",
+		"baseUrl": "./",
+		"outDir": "build",
+		"target": "es6",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"lib": ["es6"],
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["**.ts"],
+	"rulesDirectory": [],
+	"linterOptions": {
+		"exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+	}
+}
